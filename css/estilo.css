@@ -4,17 +4,18 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
+    font-size: 110%;
 }
 main{
-    padding: 10px;
     margin: 0 auto;
-    width: 80%;
-    float:left;
+    padding: 10px;
+    width: 60%;
     padding-bottom: 150px;
+    text-align: justify;
 }
 h1{
     background-color: #9e4beb;
-    font-size: 50px;
+    font-size: 300%;
     color:white;
     text-align: center;
     font-weight: bold;
@@ -49,13 +50,13 @@ figure img{
     margin-left: 20px;
 }
 blockquote{
-    width: 350px;
-    border-radius: 10px 0px; 
+    width: 35ch;
+    border-radius: 1em 0em; 
     border: 5px solid #9e4beb; 
-    padding: 20px;
+    padding: 1em;
     color: white;
     background-color: blueviolet;
-    margin-bottom: 30px;
+    margin-bottom: 2em;
     
 }
 aside{
@@ -63,7 +64,7 @@ aside{
     
     width: 14.5%;
     padding: 2em;
-    position: relative;
+    position: absolute;
     top: 290px;
     right: 0;
     
