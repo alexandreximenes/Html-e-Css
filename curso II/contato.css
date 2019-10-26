@@ -1,55 +1,213 @@
-*{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin: 0;
+header{
+    background: #cccccc;
+    padding: 20px 0; 
+}
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+
+.container label{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 10px 0;
 }
 figure{
-    margin-bottom: -4px;
+    transition: .5s;
 }
-body{
-    background: #ffffff;
-}
-
-.titulo{
-    font-size: 40px;
-    padding: 30px;
-}
-p{
-    line-height: 25px;
+figure:hover{
+    transform: scale(1.05) rotate(-3deg);
 }
 
-.principal{
-    background: rgb(167, 29, 236);
-    padding: 30px;
+.button{
+    width: 40%;
+    height: 50px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+    transition: .5s all;
+    cursor: pointer; 
+    background: orange;
+
+}
+.button:hover{
+    background: darkorange;
+    transform: scale(1.1)   
+}
+input:focus, textarea:focus {
+    transition: .5s all;
+    background: orange;
+}
+input placeholder {
     color: white;
 }
-.beneficios{
-    padding: 20px; 
+.checkbox-email{
+    margin-top: 10px;
 }
-
-.imagem-beneficios{
-    border-radius: .25em;
-    width: 60%;
-    background-clip: border-box;
-    height: 320px;
-    opacity: .1;
-    margin-right: 100px;
-    float: right;
+.radio, .select{
+    margin-top: 10px;
+    font-size: 20px;
 }
-ul{
-    float: left;
+.radio legend, .select legend{
+    margin-bottom: 10px;
 }
-li{
+.select select{
     width: 200px;
-    border-radius: 2px;
-    color: #FFFFFF;
-    padding: 30px 15px 30px 15px;
-    background: deeppink;
-    margin-bottom: 2px;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: orange;
+}
+.radio input{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.radio input:checked{
+    background: orange;
+}
+.radio label{
+    display: block; 
+    margin-bottom: 5px;
+}
+.select{
+    padding: 10px;
+}
+.container textarea{
+    width: 80%;
+    height: 200px ;
+    border: 1px solid black;
+}
+.container input{
+    display: block;
+    width: 80%;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 10px 10px;
 }
 
-em strong{
+.caixa{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav{
+   margin: 0 0 0 15px;
+   position: absolute;
+   top: 150px;
+   right: 100px;
+}
+nav li{
+   display: inline; 
+   margin-right: 15px;
+}
+nav a{
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 22px;
+   color: black;
+   text-decoration: none;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.produtos li{
+    padding: 50px 20px;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    height: 450px;
+    vertical-align: top;
+    margin: 0 10.0px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.produtos li:hover{
+    border-color: #C78c19;
+}
+
+
+.produtos li:hover h2{
+    font-size: 35px;
+    transition: .2s;
+}
+
+.produtos li:active{
+    border-color: #088c19;
+}
+
+nav a:hover{
+    color: #C78c19;
+    text-decoration: underline;
+}
+
+.produtos h2{
+    font-size: 30px;
     font-weight: bold;
 }
-.banner{
-    width: 100%;
+
+.produto-preco{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    margin: 50px 0 0 0;
+    background: url("img/bg.jpg");
+    height: auto;   
+}
+
+.logo-rodape{
+    margin: 0 auto;
+}
+.copyright{
+    font-size: 13px;
+    color: white;
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: orange;
+    font-weight: bold;
+}
+th{
+    padding: 20px;
+}
+td, th, tr{
+    width: 150px;
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+    text-align: center; 
+}
+tbody > tr:hover{
+    transition: 0.5s;
+    background: #cccccc;
 }
